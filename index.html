@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>web portfolio</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist.aos.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+  
+  <nav>
+   <div class="nav-container">
+     
+     <div class="logo" data-aos="zoom-in" data-aos-duration="1500"
+      <span>Lynx</span>
+     </div>
+     
+     <div class="links">
+       <div class="link"><a href="#">Home</a></div>
+       <div class="link"><a href="#">About</a></div>
+       <div class="link"><a href="#">Skills</a></div>
+       <div class="link"><a href="#">Services</a></div>
+        <div class="link"><a href="#">Contact</a></div>
+     </div> 
+       
+    <i class="fa-solid fa-bars hamburg" onclick="harmburg()"></i>
+   </div>
+    
+      <div class="dropdown">
+     
+      <div class="links">
+         <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
+     </div>
+    </div>
+  </nav>
+  
+  <section>
+    <div class="main-container">
+     <div class="image">
+       <img src="cool.jpg" alt="">
+     </div>
+     <div class="content">
+      <h1 data-aos="fade-left">
+        Hey, I'm
+        <span>Precious</span>
+      </h1>
+      <div class="typewritter">
+        I'm a 
+        <span class="typewritter-text">Developer
+        </span>
+        <label for=""></label>
+      </div>
+     
+     <p>My Name is Ilori Adedotun Precious,<br>Welcome to My Personal Portfolio Website</p>
+     <div class="social-links">
+       <a href="https://github.com/Lynxcodex">
+         <i class="fa-brands fa-github"></i>
+       </a>
+       <a href="https://www.facebook.com/prof.adedotun.5?mibextid=JRoKGi">
+         <i class="fa-brands fa-facebook"></i>
+       </a>
+       <a href="https://www.tiktok.com/@lynx_ultra?_t=ZM-8sWEKc4CEJJ&_r=1">
+         <i class="fa-brands fa-tiktok"></i>
+       </a>
+       <a href="https://Wa.me/+2349164668986">
+         <i class="fa-brands fa-whatsapp"></i>
+       </a>
+     </div>
+     <div class="btn">
+       <button onclick="location.href='mailto: iloriprecious4@gmail.com?subject=Good Day Sir&body=I want to Hire for a software developing Job.'">Hire Me</button>
+     </div>
+     </div>
+    </div>
+  </section>
+  
+  
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="cool.jpg" alt="">
+        </div>
+        <div class="right">
+          <div class="topic">Designing Is My Passion</div>
+          <p>
+            Hi, I’m precious, a passionate Software Developer with a knack for, crafting creative solutions, building user friendly applications, 
+             or analyzing complex data.  
+            <br>I thrive on turning ideas into impactful results, whether it’s through web development, content creation, or problem-solving.<br>
+Let’s create something amazing together.
+          </p>
+          <div class="button">
+            <button>Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span>
+      </div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">
+            Skills Reflects Our Knowledge
+          </div>
+          <p data-aos="fade-right">Programming Languages I Specialize In
+
+<br>I bring expertise in a range of programming languages, each tailored to solving specific problems and delivering innovative solutions. My skills include:
+<br>
+[HTML] for web development, and structuring website.
+<br>
+[CSS], ideal for Styling website .
+<br>
+[JAVASCRIPT], which is use to create apps, web-apps and making websites interactive .
+<br>
+[PHP], which is used in database management, Security authentication and E-commerce.</p>
+          <div class="experience">
+            <div class="num">5</div>
+            <div class="exp">
+              Years Of<br>Experience
+            </div>
+          </div>
+        </div>
+        <div class="boxes">
+         <div class="box">
+           <div class="topic">HTML</div>
+           <div class="per">70%</div>
+         </div>
+         <div class="box">
+           <div class="topic">CSS</div>
+           <div class="per">50%</div>
+         </div>
+         <div class="box">
+           <div class="topic">JavaScript</div>
+           <div class="per">25%</div>
+         </div>
+         <div class="box">
+           <div class="topic">PHP</div>
+           <div class="per">0%</div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Web Development</div>
+          <p>I specialize in creating modern, responsive, and user-friendly websites tailored to meet your needs. From front-end design to back-end functionality, I ensure seamless performance, aesthetic appeal, and scalability. Whether it’s building from scratch or enhancing an existing site, I deliver solutions that make your online presence stand out.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="topic">Graphic Design</div>
+          <p>I specialize in creating visually engaging designs tailored to your needs. From logos and branding to social media graphics and marketing materials, my work focuses on combining creativity and functionality to communicate your message effectively. Let's transform your vision into compelling visuals!</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="topic">Digital Marketing</div>
+          <p>I specialize in digital marketing to help businesses thrive online. From social media management and content creation to SEO and targeted advertising, I craft strategies that drive engagement, increase visibility, and boost conversions. Let’s work together to grow your brand and achieve your digital goals.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="topic">Icon Design</div>
+          <p>Icons are more than just visuals—they're a powerful way to communicate ideas quickly and effectively. My icon design services focus on creating clean, memorable, and versatile icons that align with your brand identity and enhance user experience. Whether for apps, websites, or marketing materials, I deliver custom designs tailored to your needs.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <div class="topic">Photography</div>
+          <p>Capturing moments that matter is my passion. Whether it’s portraits, events, or product photography, I focus on delivering high-quality, visually compelling images tailored to your needs. With an eye for detail and a commitment to creativity, I ensure every shot tells a story worth sharing.</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-tablet-alt"></i>
+          </div>
+          <div class="topic">App Development</div>
+          <p>I specialize in creating high-quality, user-friendly mobile applications tailored to meet your needs. From design to deployment, I focus on delivering seamless functionality, intuitive interfaces, and robust performance. Whether you need a business tool, a gaming app, or a custom solution, I ensure your app stands out and drives engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title">
+        <span>Contact Me</span>
+      </div>
+      <div class="text">
+        <div class="topic">Have any Project ?</div>
+        <p>If you got any projects you need help with, just contact me</p>
+        <div class="button">
+          <button onclick="location.href='mailto: iloriprecious4@gmail.com?subject=Good Day Sir&body=Please sir, i want you to help me with a project.'">Email Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <div class="text">
+      <span>Created by
+      <a href="#">ILORI ADEDOTUN PRECIOUS</a> &#169;2024 All Rights Reserved</span>
+    </div>
+  </footer>
+  
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0})
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
