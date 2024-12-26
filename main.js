@@ -1,1 +1,3 @@
-console.log('Hello World!');
+function downloadFile() {
+ window.location.href='Lynx.pdf';
+}
