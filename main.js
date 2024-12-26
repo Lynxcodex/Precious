@@ -1,3 +1,3 @@
 function downloadFile() {
- window.location.href='Lynx.pdf';
+  location.href='Lynx.pdf';
 }
