@@ -9,7 +9,6 @@ function cancel() {
   document.getElementById("dropdown").style.transform = "translateY(-500px)";
 }
 
-
 const dropdownLinks = document.querySelectorAll('.dropdown .links a');
 const dropdown = document.getElementById('dropdown');
 
