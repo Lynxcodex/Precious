@@ -230,6 +230,58 @@ Let’s create something amazing together.
         </div>
       </div>
     </div>
+
+  <div class="contact-form-container">
+  <form id="contactForm" action="https://formspree.io/f/xpwqodgj" method="POST">
+    <!-- Optional: disable FormSubmit’s default captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <h2>Contact Us</h2>
+    
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Your Name" 
+        required
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Your Email" 
+        required
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        placeholder="Your Phone Number"
+      >
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea 
+        id="message" 
+        name="message" 
+        placeholder="Your Message" 
+        rows="5" 
+        required
+      ></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>   
   </section>
   
   
