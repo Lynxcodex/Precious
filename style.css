@@ -72,7 +72,7 @@ nav{
   color: white;
   opacity: 0;
   pointer-events: none;
-  font-size:clamp(2.5rem, 0.5rem+5vw,3rem);
+  font-size: 25px;
 }
 
 .nav-container .links{
@@ -109,7 +109,7 @@ nav{
 }
 
 .dropdown{
-  z-index: 100;
+  z-index:100;
   position: absolute;
   top:0;
   transform: translateY(-500px);
@@ -423,6 +423,7 @@ section .button button:hover {
   cursor: default;
   color: #fff;
   transition: all 0.4s ease;
+  border: 2px solid crimson;
 }
 
 .services .boxes .box:hover {
@@ -627,5 +628,94 @@ footer .text span a:hover {
   .skills-details .boxes .per {
     font-size: 50px;
     color: crimson;
+  }
+}
+
+
+/* Contact Form Styles */
+.contact-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #000; /* Matching website gradient */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: crimson ;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: crimson; /* Primary website color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: crimson;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
   }
 }
