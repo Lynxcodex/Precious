@@ -820,3 +820,29 @@ body {
 .project-card .btn:hover {
   background-color: crimson;
 }
+
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  background: black;
+  color: crimson;
+}
