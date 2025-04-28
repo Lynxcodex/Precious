@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist.aos.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Swiper (CDN) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+        
 </head>
 
 <body>
@@ -29,6 +34,7 @@
        <div class="link"><a href="#skills">Skills</a></div>
        <div class="link"><a href="#services">Services</a></div>
         <div class="link"><a href="#contact">Contact</a></div>
+        <div class="link"><a href="#projects">Projects</a></div>
      </div> 
        
        <i id="hamburg" class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -44,6 +50,7 @@
         <a href="#skills">Skills</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
+        <a href="#projects">Projects</a>
         <i id="cancel" class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
      </div>
     </div>
@@ -167,7 +174,47 @@ Let’s create something amazing together.
       </div>
     </div>
   </section>
+
+<section id="projects" class="projects-section">
+  <h1>My Projects</h1>
+  <div class="projects-slider splide" aria-label="Projects Carousel">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- Project Slide #1 -->
+        <li class="splide__slide">
+          <div class="project-card">
+            <img src="cool.jpg" alt="Preview of Project 1">
+            <h3>Project One</h3>
+            <p>this is my first project in my entire time and it's looking cool can you tell me much about it.</p>
+            <div class="tags">
+              <span>Html</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="#" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </li>
+        <!-- Project Slide #2 -->
+        <li class="splide__slide">
+          <div class="project-card">
+            <img src="file.png" alt="Preview of Project 2">
+            <h3>Project Two</h3>
+            <p>A short description of Project Two with key features.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="#" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </li>
+        <!-- Add more <li class="splide__slide"> for additional projects -->
+      </ul>
+    </div>
+  </div>
+</section>
   
+        
   
   <section class="services" id="services">
     <div class="content">
@@ -298,9 +345,24 @@ Let’s create something amazing together.
   
   
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({offset:0})
-  </script>
+  <!-- Splide CSS/JS (CDN) -->
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  new Splide('.projects-slider', {
+    type:    'loop',
+    perPage: 3,
+    gap:     '1rem',
+    breakpoints: {
+      1024: { perPage: 2 },
+      1024:  { perPage: 1 },
+    },
+  }).mount();
+});
+</script>
+  
   <script src="main.js"></script>
 </body>
 </html>
