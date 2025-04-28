@@ -24,7 +24,7 @@ dropdownLinks.forEach(link => {
 window.onscroll = function () {
   let backToTopButton = document.getElementById("backToTop");
 
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     backToTopButton.style.display = "flex";
   } else {
     backToTopButton.style.display = "none";
