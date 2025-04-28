@@ -719,3 +719,97 @@ button:hover {
     font-size: 16px;
   }
 }
+
+
+
+
+:root {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --accent: cyan;
+  --tag-bg: #333;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Optional: adapt automatically to user’s OS-level preference */
+@media (prefers-color-scheme: dark) {
+  /* Already dark by default in this example */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    /* Override colors if needed */
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}
+
+
+
+.projects-section {
+  padding: 2rem 1rem;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 0.5rem 0;
+}
+
+.project-card .tags {
+  margin: 0.75rem 0;
+}
+.project-card .tags span {
+  display: inline-block;
+  background-color: var(--tag-bg);
+  color: #bbb;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.project-card .btn:hover {
+  background-color: cyan;
+}
