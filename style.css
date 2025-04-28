@@ -727,7 +727,7 @@ button:hover {
   --bg: #121212;
   --text: #e0e0e0;
   --card-bg: #1e1e1e;
-  --accent: cyan;
+  --accent: crimson;
   --tag-bg: #333;
 }
 
@@ -811,5 +811,5 @@ body {
   font-weight: 600;
 }
 .project-card .btn:hover {
-  background-color: cyan;
+  background-color: crimson;
 }
